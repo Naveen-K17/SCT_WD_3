@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>QuizNova | Challenge Your Knowledge</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- ======================================
+         NAVIGATION
+    ======================================= -->
+
+    <header class="navbar" id="navbar">
+
+        <div class="nav-container">
+
+            <a
+                href="#home"
+                class="logo"
+            >
+                Quiz<span>Nova</span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+
+                <a
+                    href="#home"
+                    class="nav-link active"
+                >
+                    Home
+                </a>
+
+                <a
+                    href="#categories"
+                    class="nav-link"
+                >
+                    Categories
+                </a>
+
+                <a
+                    href="#features"
+                    class="nav-link"
+                >
+                    Features
+                </a>
+
+                <a
+                    href="#about"
+                    class="nav-link"
+                >
+                    About
+                </a>
+
+            </nav>
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+                aria-label="Open menu"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ======================================
+         HOME / HERO
+    ======================================= -->
+
+    <main>
+
+        <section
+            class="hero"
+            id="home"
+        >
+
+            <div class="hero-background">
+
+                <div class="glow glow-one"></div>
+
+                <div class="glow glow-two"></div>
+
+                <div class="grid-pattern"></div>
+
+            </div>
+
+
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    <span>✦</span>
+                    INTERACTIVE QUIZ PLATFORM
+                </div>
+
+
+                <h1>
+                    Challenge Your
+                    <span>Knowledge.</span>
+                </h1>
+
+
+                <p>
+                    Test your skills, learn something new,
+                    and discover how much you really know.
+                    Choose a category and begin your challenge.
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <button
+                        class="primary-btn"
+                        id="startQuizBtn"
+                    >
+                        Start Quiz
+                        <span>→</span>
+                    </button>
+
+                    <a
+                        href="#categories"
+                        class="secondary-btn"
+                    >
+                        Explore Categories
+                    </a>
+
+                </div>
+
+
+                <div class="hero-stats">
+
+                    <div class="hero-stat">
+
+                        <strong>
+                            5+
+                        </strong>
+
+                        <span>
+                            Categories
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-divider"></div>
+
+
+                    <div class="hero-stat">
+
+                        <strong>
+                            25+
+                        </strong>
+
+                        <span>
+                            Questions
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-divider"></div>
+
+
+                    <div class="hero-stat">
+
+                        <strong>
+                            ∞
+                        </strong>
+
+                        <span>
+                            Challenges
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             CATEGORIES
+        ======================================= -->
+
+        <section
+            class="categories section"
+            id="categories"
+        >
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    EXPLORE
+                </div>
+
+                <h2>
+                    Choose Your
+                    <span>Challenge</span>
+                </h2>
+
+                <p>
+                    Pick a category and put your knowledge
+                    to the test.
+                </p>
+
+            </div>
+
+
+            <div class="category-grid">
+
+                <button
+                    class="category-card"
+                    data-category="general"
+                >
+
+                    <div class="category-icon purple">
+                        🧠
+                    </div>
+
+                    <div>
+                        <h3>
+                            General Knowledge
+                        </h3>
+
+                        <p>
+                            Test your everyday knowledge.
+                        </p>
+                    </div>
+
+                    <span class="card-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="category-card"
+                    data-category="programming"
+                >
+
+                    <div class="category-icon blue">
+                        💻
+                    </div>
+
+                    <div>
+                        <h3>
+                            Programming
+                        </h3>
+
+                        <p>
+                            Challenge your coding skills.
+                        </p>
+                    </div>
+
+                    <span class="card-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="category-card"
+                    data-category="web"
+                >
+
+                    <div class="category-icon cyan">
+                        🌐
+                    </div>
+
+                    <div>
+                        <h3>
+                            Web Development
+                        </h3>
+
+                        <p>
+                            HTML, CSS and JavaScript.
+                        </p>
+                    </div>
+
+                    <span class="card-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="category-card"
+                    data-category="science"
+                >
+
+                    <div class="category-icon green">
+                        🔬
+                    </div>
+
+                    <div>
+                        <h3>
+                            Science
+                        </h3>
+
+                        <p>
+                            Explore the world of science.
+                        </p>
+                    </div>
+
+                    <span class="card-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="category-card"
+                    data-category="technology"
+                >
+
+                    <div class="category-icon orange">
+                        ⚡
+                    </div>
+
+                    <div>
+                        <h3>
+                            Technology
+                        </h3>
+
+                        <p>
+                            Discover the latest technology.
+                        </p>
+                    </div>
+
+                    <span class="card-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="category-card"
+                    data-category="entertainment"
+                >
+
+                    <div class="category-icon pink">
+                        🎬
+                    </div>
+
+                    <div>
+                        <h3>
+                            Entertainment
+                        </h3>
+
+                        <p>
+                            Movies, music and pop culture.
+                        </p>
+                    </div>
+
+                    <span class="card-arrow">
+                        →
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             QUIZ SECTION
+        ======================================= -->
+
+        <section
+            class="quiz-section section"
+            id="quiz"
+        >
+
+            <div class="quiz-container">
+
+                <div class="quiz-top">
+
+                    <div>
+
+                        <span class="quiz-label">
+                            QUESTION
+                        </span>
+
+                        <h2 id="questionNumber">
+                            Question 01 / 10
+                        </h2>
+
+                    </div>
+
+
+                    <div class="timer">
+
+                        <span>
+                            ⏱
+                        </span>
+
+                        <strong id="timer">
+                            15
+                        </strong>
+
+                        <small>
+                            sec
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="progress-container">
+
+                    <div class="progress-info">
+
+                        <span>
+                            Your Progress
+                        </span>
+
+                        <span id="progressPercent">
+                            0%
+                        </span>
+
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress-fill"
+                            id="progressFill"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="question-card">
+
+                    <div
+                        class="question-category"
+                        id="questionCategory"
+                    >
+                        GENERAL KNOWLEDGE
+                    </div>
+
+
+                    <h3 id="questionText">
+                        Loading question...
+                    </h3>
+
+
+                    <div
+                        class="answers"
+                        id="answers"
+                    >
+                    </div>
+
+
+                    <div class="quiz-actions">
+
+                        <button
+                            class="next-btn"
+                            id="nextBtn"
+                            disabled
+                        >
+                            Next Question
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             RESULT SECTION
+        ======================================= -->
+
+        <section
+            class="result-section section"
+            id="result"
+        >
+
+            <div class="result-container">
+
+                <div class="result-icon">
+                    🏆
+                </div>
+
+
+                <div class="result-label">
+                    QUIZ COMPLETE
+                </div>
+
+
+                <h2>
+                    Great Job!
+                </h2>
+
+
+                <p>
+                    Here's how you performed.
+                </p>
+
+
+                <div class="score-circle">
+
+                    <div class="score-inner">
+
+                        <strong id="finalScore">
+                            0
+                        </strong>
+
+                        <span>
+                            / 10
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="result-message" id="resultMessage">
+                    Keep learning and keep improving!
+                </div>
+
+
+                <div class="result-stats">
+
+                    <div class="result-stat">
+
+                        <span>
+                            ✓
+                        </span>
+
+                        <strong id="correctAnswers">
+                            0
+                        </strong>
+
+                        <small>
+                            Correct
+                        </small>
+
+                    </div>
+
+
+                    <div class="result-stat">
+
+                        <span>
+                            ✕
+                        </span>
+
+                        <strong id="wrongAnswers">
+                            0
+                        </strong>
+
+                        <small>
+                            Wrong
+                        </small>
+
+                    </div>
+
+
+                    <div class="result-stat">
+
+                        <span>
+                            %
+                        </span>
+
+                        <strong id="accuracy">
+                            0%
+                        </strong>
+
+                        <small>
+                            Accuracy
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="result-buttons">
+
+                    <button
+                        class="primary-btn"
+                        id="retryBtn"
+                    >
+                        Try Again
+                        <span>↻</span>
+                    </button>
+
+                    <button
+                        class="secondary-btn"
+                        id="categoryBtn"
+                    >
+                        Choose Category
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             FEATURES
+        ======================================= -->
+
+        <section
+            class="features section"
+            id="features"
+        >
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    WHY QUIZNOVA
+                </div>
+
+                <h2>
+                    Learn.
+                    <span>Challenge.</span>
+                    Improve.
+                </h2>
+
+                <p>
+                    More than just a quiz — an interactive
+                    way to test and improve your knowledge.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        ⚡
+                    </div>
+
+                    <h3>
+                        Fast & Interactive
+                    </h3>
+
+                    <p>
+                        Answer questions with a smooth,
+                        responsive interface designed
+                        for an engaging experience.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        🎯
+                    </div>
+
+                    <h3>
+                        Track Your Score
+                    </h3>
+
+                    <p>
+                        Get instant feedback and detailed
+                        results after completing your quiz.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        📱
+                    </div>
+
+                    <h3>
+                        Fully Responsive
+                    </h3>
+
+                    <p>
+                        Enjoy QuizNova on desktops,
+                        tablets and mobile devices.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             ABOUT
+        ======================================= -->
+
+        <section
+            class="about section"
+            id="about"
+        >
+
+            <div class="about-content">
+
+                <div class="section-label">
+                    ABOUT THE PROJECT
+                </div>
+
+                <h2>
+                    Built to make
+                    <span>learning fun.</span>
+                </h2>
+
+                <p>
+                    QuizNova is an interactive quiz platform
+                    created as part of my Web Development
+                    Internship at SkillCraft Technology.
+                </p>
+
+                <p>
+                    The project focuses on JavaScript
+                    fundamentals including DOM manipulation,
+                    event handling, timers, arrays and
+                    dynamic content generation.
+                </p>
+
+                <div class="tech-list">
+
+                    <span>
+                        HTML5
+                    </span>
+
+                    <span>
+                        CSS3
+                    </span>
+
+                    <span>
+                        JavaScript
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ======================================
+         FOOTER
+    ======================================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                Quiz<span>Nova</span>
+            </div>
+
+            <p>
+                Challenge your knowledge. One question at a time.
+            </p>
+
+            <div class="footer-line"></div>
+
+            <small>
+                Built with HTML, CSS & JavaScript
+                · SkillCraft Technology Internship
+            </small>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ======================================
+         BACK TO TOP
+    ======================================= -->
+
+    <button
+        class="top-btn"
+        id="topBtn"
+        aria-label="Back to top"
+    >
+        ↑
+    </button>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
