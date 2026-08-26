@@ -9,7 +9,7 @@ The application allows users to choose a quiz category, answer multiple-choice q
 ## 🌐 Live Demo
 
 🔗 **Live Website:**  
-https://naveen-k17.github.io/SCT_WD_03/
+https://naveen-k17.github.io/SCT_WD_3/
 
 ---
 
